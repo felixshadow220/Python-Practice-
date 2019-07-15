@@ -1,0 +1,30 @@
+echo "# fibonacci-sequence" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/felixshadow220/fibonacci-sequence.git
+git push -u origin master
+
+
+# Break the question down into two parts. First, create a Fibonnaci sequence; then create another function to ask for input
+
+fib_seq = [0,1]
+for i in range(2, 10):
+    num = fib_seq[i-1] + fib_seq[i-2]
+    fib_seq.append(num)
+
+print(fib_seq)
+
+def ask_num():
+    return (int(input("How many Fibonnaci numbers do you want to generate? ")))
+
+def Fibonnaci():
+    a = ask_num()
+    fib_seq = [0,1]
+    for i in range(2, a+1):
+        num = fib_seq[i-1] + fib_seq[i-2]
+        fib_seq.append(num)
+        
+    return fib_seq   
+    
+Fibonnaci()
