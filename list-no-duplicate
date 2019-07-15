@@ -1,0 +1,25 @@
+# Create a list with duplicate numbers
+a = [1,1,2,3,4,5,5,6,7,8,8,9,9,9,10]
+
+# Two ways to return a list with no duplicate number
+
+# Method 1
+def list_no_dup1(a):
+    list = []
+    for i in a:
+        if i not in list:
+            list.append(i)
+        else:
+            continue
+    
+    return list
+    
+list_no_dup1(a)
+
+# Method 2
+def list_no_dup2(a):
+    return set(a)
+
+# Set function can help to eliminate all the duplicate numbers in the list
+    
+list_no_dup2(a)
