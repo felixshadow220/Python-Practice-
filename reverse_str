@@ -1,0 +1,13 @@
+# Ask for a user input string, and then put return it in a reverse order
+
+def ask_a_sentence():
+    return (str(input("Please write a sentence: ")))
+
+def reverse_order():
+    sentence = ask_a_sentence().split(" ")
+    # Split function can break up the string and make it into a list
+    rev_str = " ". join(sentence[::-1])
+    # Join function can join the elemenet into the list back into a string
+    return rev_str
+    
+reverse_order()
