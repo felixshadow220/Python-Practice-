@@ -18,7 +18,7 @@ list_no_dup1(a)
 
 # Method 2
 def list_no_dup2(a):
-    return set(a)
+    return list(set(a))
 
 # Set function can help to eliminate all the duplicate numbers in the list
     
